@@ -1,0 +1,19 @@
+{
+  "name": "coquozyan_3_03022022",
+  "version": "1.0.0",
+  "description": "Réalisation d'une maquette d'un site de commande de repas",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./public/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yan-Coquoz/CoquozYan_3_03022022.git"
+  },
+  "author": "Yan Coquoz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Yan-Coquoz/CoquozYan_3_03022022/issues"
+  },
+  "homepage": "https://github.com/Yan-Coquoz/CoquozYan_3_03022022#readme"
+}
