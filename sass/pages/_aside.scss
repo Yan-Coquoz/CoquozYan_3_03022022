@@ -1,0 +1,14 @@
+.aside {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  padding: 1em 5% 3em;
+  background-color: #ebebeb;
+  &__tilte {
+    padding: 1rem;
+  }
+}

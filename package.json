@@ -4,7 +4,7 @@
   "description": "Réalisation d'une maquette d'un site de commande de repas",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./sass/main.scss:./public/style.css"
+    "sass": "sass --watch ./sass/main.scss:./public/style.css --style compressed"
   },
   "repository": {
     "type": "git",

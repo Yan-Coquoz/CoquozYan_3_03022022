@@ -20,3 +20,14 @@ Puis le dans le package.json.
 ````bash
  npm run sass
 ````
+
+## Graphique
+
+police : 
+- texte: Roboto
+- logo et titre : Shrikhand
+
+couleur :
+- Primaire : #9356DC
+- Secondaire : #FF79DA
+- Tertaire : #99E2D0
