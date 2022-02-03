@@ -1,0 +1,23 @@
+/* header */
+header .fa-arrow-left {
+  color: black;
+}
+/* localisation */
+.fa-map-marker-alt:before {
+  color: $police;
+}
+
+/* footer */
+.fa-utensils {
+  padding-right: 0.5em;
+  &:before {
+    color: #fff;
+  }
+}
+.fa-hands-helping {
+  margin-right: 0.5em;
+  font-size: 12px;
+  &:before {
+    color: #fff;
+  }
+}

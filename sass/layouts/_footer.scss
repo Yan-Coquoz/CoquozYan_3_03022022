@@ -1,0 +1,14 @@
+.footer {
+  background-color: rgb(71, 65, 62);
+  padding: 1.5em 1em;
+  &__title {
+    color: #fff;
+    letter-spacing: 1.2px;
+    font-weight: lighter;
+  }
+  &__list-box li {
+  }
+  &__list-box li a {
+    color: #fff;
+  }
+}
