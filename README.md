@@ -59,7 +59,7 @@ Liste des dossiers utilisés :
 - layouts : Les blocs BEM réutilisable (header, footer formulaire, nav ...).
 - components : Blocs BEM indépendant (bouton, icons...).
 - pages : Tout ce qui est spécifique à une page.
-- themes : tout ce qui touche à des thmes spécifique (fête de noel, black friday...)
+- themes : tout ce qui touche à des themes spécifique (fête de noel, black friday...)
 - vendors : Tous ce qui est externe au site, (bootstrap, Jquery UI...).
 
 </details>

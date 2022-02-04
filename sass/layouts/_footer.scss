@@ -2,9 +2,12 @@
   background-color: #353535;
   padding: 1.5em 1em;
   &__title {
-    color: #fff;
     letter-spacing: 1.2px;
     font-weight: lighter;
+    width: 6rem;
+    &__logo {
+      filter: invert(100%);
+    }
   }
   &__list-box li {
   }
