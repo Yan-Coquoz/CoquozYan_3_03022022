@@ -1,0 +1,50 @@
+.working {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  &__card {
+    background: $bgcolorLG;
+    border-radius: 15px;
+    box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.46);
+    display: flex;
+    margin-bottom: 1.2rem;
+    padding: 1rem 0;
+    &:hover {
+      background-color: lighten($color: $primaire, $amount: 35);
+      &,
+      .fa-store .fa-list .fa-mobile-alt {
+        color: $primaire;
+      }
+    }
+    &__number {
+      background: $primaire;
+      border-radius: 25px;
+      color: #fff;
+      width: 20px;
+      height: 20px;
+      text-align: center;
+      align-self: center;
+      position: relative;
+      left: -8px;
+    }
+
+    &__link-bloc {
+      display: flex;
+      font-weight: bold;
+      gap: 1rem;
+      width: 100%;
+
+      div {
+        display: flex;
+        margin-left: 1rem;
+        justify-self: center;
+        align-items: center;
+      }
+      p {
+        width: 90%;
+        color: #000;
+      }
+    }
+  }
+}

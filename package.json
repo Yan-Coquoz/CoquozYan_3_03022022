@@ -4,7 +4,8 @@
   "description": "Réalisation d'une maquette d'un site de commande de repas",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./sass/main.scss:./public/style.css --style compressed"
+    "sass": "sass --watch ./sass/main.scss:./public/style.css --style compressed",
+    "prefix": "postcss ./public/style.css --use autoprefixer -d ./public/prefixed/"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,6 @@
   "bugs": {
     "url": "https://github.com/Yan-Coquoz/CoquozYan_3_03022022/issues"
   },
-  "homepage": "https://github.com/Yan-Coquoz/CoquozYan_3_03022022#readme"
+  "homepage": "https://github.com/Yan-Coquoz/CoquozYan_3_03022022#readme",
+  "browserslist": "last 4 versions"
 }
