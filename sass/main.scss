@@ -1,9 +1,7 @@
 @import "./utils/variable";
-@import "./base/police";
+@import "./base/base";
 @import "./layouts/header";
 @import "./layouts/footer";
 @import "./components/icons";
 @import "./components/button";
-@import "./pages/aside";
-@import "./pages/localite";
-@import "./pages/working";
+@import "./pages/_mobile-home";

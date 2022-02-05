@@ -1,3 +1,29 @@
+/* Version mobile */
+/* localité */
+.local {
+  text-align: center;
+  background: $bgcolorG;
+  padding: 1rem;
+  &__city {
+    padding-left: 1rem;
+  }
+}
+/* aside */
+.aside {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  padding: 1em 5% 3em;
+  background-color: $bgcolorLG;
+  &__tilte {
+    padding: 1rem;
+  }
+}
+/* fonctionnement */
 .working {
   padding: 2rem;
   display: flex;
