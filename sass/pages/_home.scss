@@ -78,6 +78,7 @@
   padding: 0 2rem;
   display: flex;
   flex-direction: column;
+  margin-bottom: 2rem;
   &__card {
     width: 100%;
     margin-inline-start: 0;
@@ -97,8 +98,6 @@
         border-radius: 5px;
         color: darken($color: $tertiaire, $amount: 35);
         font-weight: bold;
-      }
-      & img {
       }
     }
     &__desc {
