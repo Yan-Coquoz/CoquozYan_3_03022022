@@ -1,0 +1,33 @@
+/* Pages des restaurants */
+/* version mobile */
+.entete {
+  &__logo {
+    position: relative;
+
+    &__desc {
+      position: absolute;
+      background: #fff;
+      width: 100%;
+      bottom: 0;
+      border-radius: 25px 25px 0 0;
+      display: flex;
+      padding: 0 1rem;
+      justify-content: space-between;
+      &-title {
+      }
+      &-heart {
+        align-self: center;
+        & .fas.fa-heart {
+          display: none;
+        }
+        &:hover .far.fa-heart {
+          display: none;
+        }
+        &:hover .fas.fa-heart {
+          display: block;
+          color: $primaire;
+        }
+      }
+    }
+  }
+}

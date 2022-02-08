@@ -22,8 +22,9 @@
     padding: 1em 5% 3em;
     text-align: center;
     width: 100%;
-    &__tilte {
+    &__title {
       padding: 1rem;
+      font-family: "Roboto", sans-serif;
     }
     &__text {
       margin-bottom: 1rem;
@@ -35,6 +36,9 @@
     flex-direction: column;
     justify-content: space-around;
     padding: 2rem;
+    &__title {
+      font-family: "Roboto", sans-serif;
+    }
     &__card {
       background: $bgcolorLG;
       border-radius: 15px;
@@ -91,6 +95,9 @@
   flex-direction: column;
   margin-bottom: 2rem;
   padding: 0 2rem;
+  & h2 {
+    font-family: "Roboto", sans-serif;
+  }
   &__bloc {
     display: flex;
     flex-direction: column;
@@ -136,13 +143,13 @@
       &--fav {
         padding-top: 0.8rem;
         padding-right: 1rem;
-        & .fas.fa-heart:before {
+        & .fas.fa-heart {
           display: none;
         }
         &:hover .far.fa-heart {
           display: none;
         }
-        &:hover .fas.fa-heart:before {
+        &:hover .fas.fa-heart {
           display: inline;
           color: $primaire;
         }
