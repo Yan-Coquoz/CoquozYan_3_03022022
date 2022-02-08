@@ -1,78 +1,91 @@
 /* Version mobile */
+
 /* localité */
 .local {
   background: $bgcolorG;
   padding: 1rem;
   text-align: center;
+  box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.3) inset;
   &__city {
     padding-left: 1rem;
   }
 }
-/* aside */
-.aside {
-  align-items: center;
-  background-color: $bgcolorLG;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  margin: 0 auto;
-  padding: 1em 5% 3em;
-  text-align: center;
-  width: 100%;
-  &__tilte {
-    padding: 1rem;
-  }
-}
-/* fonctionnement */
-.working {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  padding: 2rem;
-  &__card {
-    background: $bgcolorLG;
-    border-radius: 15px;
-    box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.46);
+.home {
+  /* aside */
+  &__aside {
+    align-items: center;
+    background-color: $bgcolorLG;
     display: flex;
-    margin-bottom: 1.2rem;
-    padding: 1rem 0;
-    &:hover {
-      background-color: lighten($color: $primaire, $amount: 35);
-      &,
-      .fa-store .fa-list .fa-mobile-alt {
-        color: $primaire;
-      }
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding: 1em 5% 3em;
+    text-align: center;
+    width: 100%;
+    &__tilte {
+      padding: 1rem;
     }
-    &__number {
-      background: $primaire;
-      border-radius: 25px;
-      color: #fff;
-      width: 20px;
-      height: 20px;
-      text-align: center;
-      align-self: center;
-      position: relative;
-      left: -8px;
+    &__text {
+      margin-bottom: 1rem;
     }
-
-    &__link-bloc {
+  }
+  /* fonctionnement */
+  &__working {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 2rem;
+    &__card {
+      background: $bgcolorLG;
+      border-radius: 15px;
+      box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.46);
       display: flex;
-      font-weight: bold;
-      gap: 1rem;
-      width: 100%;
-      div {
-        align-items: center;
-        display: flex;
-        justify-self: center;
-        margin-left: 1rem;
+      margin-bottom: 1.2rem;
+      padding: 1rem 0;
+      &:hover {
+        background-color: lighten($color: $primaire, $amount: 35);
+        &,
+        .fa-store,
+        .fa-list,
+        .fa-mobile-alt {
+          color: $primaire;
+        }
       }
-      p {
-        color: #000;
-        width: 90%;
+      &__number {
+        background: $primaire;
+        border-radius: 25px;
+        color: #fff;
+        width: 20px;
+        height: 20px;
+        text-align: center;
+        position: relative;
+        left: -10px;
+        & span {
+          position: relative;
+          top: 3px;
+        }
+      }
+
+      &__link-bloc {
+        display: flex;
+        font-weight: bold;
+        gap: 1rem;
+        width: 100%;
+        div {
+          align-items: center;
+          display: flex;
+          justify-self: center;
+          margin-left: 1rem;
+        }
+        p {
+          color: #000;
+          width: 90%;
+        }
       }
     }
   }
 }
+
 .restaurant {
   display: flex;
   flex-direction: column;
@@ -80,7 +93,7 @@
   padding: 0 2rem;
   &__bloc {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     width: 100%;
   }
@@ -143,6 +156,72 @@
 }
 
 @media screen and (min-width: 768px) {
+  .local {
+    border-radius: 0 0 25px 25px;
+    &__city {
+      font-size: 1.2em;
+    }
+  }
+  .home {
+    display: flex;
+    margin-bottom: 2rem;
+    &__aside {
+      width: 30%;
+      padding: 1rem;
+      margin-left: 2rem;
+      justify-content: space-around;
+      &__text {
+        margin-bottom: 1rem;
+        font-size: 1.2em;
+      }
+    }
+    &__working {
+      width: 65%;
+      padding-top: 1rem;
+      justify-content: space-between;
+      padding: 0;
+      margin: 0 2rem;
+      &__bloc {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 2rem;
+      }
+      &__card {
+        margin-bottom: 0;
+        &__link-text {
+          font-size: 1.2em;
+        }
+        &__number span {
+          font-size: 1em;
+        }
+      }
+    }
+  }
+  .restaurant {
+    &__bloc {
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 1.5rem;
+    }
+    &__card {
+      min-width: 300px;
+      width: 48%;
+      margin: 0;
+    }
+  }
 }
 @media screen and (min-width: 992px) {
+  .home,
+  .restaurant {
+    min-width: 90%;
+    width: 60%;
+    margin: 0 auto;
+  }
+  .home {
+    margin-bottom: 2rem;
+  }
+  .restaurant {
+    margin: 0rem auto 2.5rem auto;
+  }
 }

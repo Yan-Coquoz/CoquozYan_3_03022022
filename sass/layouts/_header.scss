@@ -1,10 +1,10 @@
 .header {
   width: 100%;
-  text-align: center;
-  box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.3);
-  -webkit-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.3);
-  position: sticky;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  overflow: visible;
   &__title {
     text-align: center;
     margin: 0 auto;
@@ -12,7 +12,7 @@
     padding: 0.67em 0 0.4em 0;
     &--menu {
       margin: 1rem auto;
-      width: 40%;
+      width: 50%;
     }
   }
   &__link {
@@ -20,8 +20,18 @@
     &--menu {
       float: left;
       padding-left: 1rem;
+      display: flex;
+      justify-content: center;
+      align-content: center;
       position: relative;
-      top: 5px;
+      height: 100%;
+      width: 2%;
     }
+  }
+}
+@media screen and(min-width:768px) {
+  .header__link--menu i {
+    font-size: 2em;
+    padding-left: 1rem;
   }
 }

@@ -18,6 +18,11 @@ couleur :
 - Tertaire : #99E2D0
 - Footer : #353535
 
+### Validation du code
+
+- [W3C HTML](https://validator.w3.org/)
+- [W3C CSS](https://jigsaw.w3.org/css-validator/)
+
 ## Configuration
 
 <details>
