@@ -1,0 +1,9 @@
+@mixin souligner {
+  position: absolute;
+  bottom: -7px;
+  left: 0;
+  background-color: $tertiaire;
+  width: 2.5em;
+  height: 3px;
+  display: inline;
+}
