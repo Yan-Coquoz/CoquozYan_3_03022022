@@ -1,10 +1,8 @@
 /* Pages des restaurants */
 /* version mobile */
-
 .entete {
   &__logo {
     position: relative;
-
     &__desc {
       position: absolute;
       background: #fff;
@@ -51,26 +49,31 @@
       display: flex;
       justify-content: space-between;
       position: relative;
+      margin-bottom: 1rem;
       &__desc {
         margin-left: 1rem;
         width: 100%;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: space-between;
         padding: 1rem;
         & h4 {
           padding-bottom: 0.3rem;
         }
-        &--detail {
+        &-bloc {
           display: flex;
           justify-content: space-between;
-          align-content: center;
-
-          & span {
-            font-weight: bolder;
-            margin-right: 1rem;
-            display: inline-block;
-          }
+          position: relative;
+        }
+        &--detail {
+          white-space: nowrap;
+          overflow: hidden;
+          display: flex;
+        }
+        & span {
+          font-weight: bolder;
+          display: block;
+          width: 2rem;
         }
       }
       &__check {
@@ -78,12 +81,18 @@
         border-radius: 0 20px 20px 0;
         display: none;
         height: 100%;
-        padding: 2rem 1rem;
+        padding: 1.55rem 1rem;
+
         & .fa-check-circle {
           color: #fff;
           font-size: 1.5em;
           background: $tertiaire;
         }
+      }
+
+      &:hover &__desc--detail {
+        text-overflow: ellipsis;
+        width: 200px;
       }
       &:hover &__check {
         display: block;
@@ -91,4 +100,14 @@
     }
   }
 }
-// TODO annimations et les versions tab et desk
+// TODO probleme affichage ... en mobile dans la description d'un plat
+
+@media screen and(min-width:768px) {
+  .menu__entree__card-bloc {
+    &:hover &__desc--detail {
+      width: 100%;
+    }
+  }
+}
+@media screen and(min-width:992px) {
+}

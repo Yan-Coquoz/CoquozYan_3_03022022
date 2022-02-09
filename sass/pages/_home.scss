@@ -165,6 +165,7 @@
 @media screen and (min-width: 768px) {
   .local {
     border-radius: 0 0 25px 25px;
+    padding: 2rem;
     &__city {
       font-size: 1.2em;
     }
@@ -173,7 +174,7 @@
     display: flex;
     margin-bottom: 2rem;
     &__aside {
-      width: 30%;
+      width: 35%;
       padding: 1rem;
       margin-left: 2rem;
       justify-content: space-around;
@@ -188,6 +189,10 @@
       justify-content: space-between;
       padding: 0;
       margin: 0 2rem;
+      &__title {
+        text-align: center;
+        margin: 2.5rem 0;
+      }
       &__bloc {
         display: flex;
         flex-direction: column;
@@ -224,6 +229,9 @@
     min-width: 90%;
     width: 60%;
     margin: 0 auto;
+    &__card {
+      height: 70%;
+    }
   }
   .home {
     margin-bottom: 2rem;
