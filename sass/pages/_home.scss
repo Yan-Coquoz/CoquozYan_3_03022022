@@ -224,6 +224,9 @@
   }
 }
 @media screen and (min-width: 992px) {
+  .local {
+    width: 100%;
+  }
   .home,
   .restaurant {
     min-width: 90%;
@@ -233,6 +236,7 @@
       height: 70%;
     }
   }
+
   .home {
     margin-bottom: 2rem;
   }

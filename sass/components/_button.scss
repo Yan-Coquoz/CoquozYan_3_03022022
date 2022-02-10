@@ -3,13 +3,17 @@ button {
   padding: 1rem;
   border: none;
   border-radius: 25px;
-  background: rgb(147, 86, 220);
-  background: linear-gradient(
-    4deg,
-    rgba(147, 86, 220, 1) 0%,
-    rgba(255, 121, 218, 1) 100%
-  );
+  background: $primaire;
+  background: linear-gradient(4deg, $primaire 0%, $secondaire 100%);
   box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.46);
+  &:hover {
+    background: linear-gradient(
+      4deg,
+      lighten($primaire, 5%) 0%,
+      lighten($secondaire, 5%) 100%
+    );
+    box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.66);
+  }
   &:active {
     position: relative;
     top: 1px;

@@ -47,73 +47,76 @@
         @include souligner;
       }
     }
-    &__card-bloc {
-      border-radius: 20px;
-      box-shadow: 0px 6px 9px 0px rgba(0, 0, 0, 0.4);
+  }
+  &__card-bloc {
+    border-radius: 20px;
+    box-shadow: 0px 6px 9px 0px rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 1rem;
+    overflow: hidden;
+
+    &:nth-child(1) {
+      animation: menu 0.8s ease-in 0.1s 1;
+    }
+    &:nth-child(2) {
+      animation: menu 0.8s ease-in 0.1s 1;
+    }
+    &:nth-child(3) {
+      animation: menu 0.8s ease-in 0.15s 1;
+    }
+    &:nth-child(4) {
+      animation: menu 0.8s ease-in 0.2s 1;
+    }
+    &__desc {
+      margin-left: 1rem;
+      width: 100%;
       display: flex;
+      flex-direction: column;
       justify-content: space-between;
-      position: relative;
-      margin-bottom: 1rem;
-      overflow: hidden;
-
-      &:nth-child(2) {
-        animation: menu 0.8s ease-in 0.1s 1;
+      padding: 1rem;
+      & h4 {
+        padding-bottom: 0.3rem;
       }
-      &:nth-child(3) {
-        animation: menu 0.8s ease-in 0.15s 1;
-      }
-      &:nth-child(4) {
-        animation: menu 0.8s ease-in 0.2s 1;
-      }
-      &__desc {
-        margin-left: 1rem;
-        width: 100%;
+      &-bloc {
         display: flex;
-        flex-direction: column;
         justify-content: space-between;
-        padding: 1rem;
-        & h4 {
-          padding-bottom: 0.3rem;
-        }
-        &-bloc {
-          display: flex;
-          justify-content: space-between;
-        }
-        &--detail {
-          display: flex;
-          white-space: nowrap;
-          overflow: hidden;
-          text-overflow: ellipsis;
-          width: 245px;
-        }
-        & span {
-          font-weight: bolder;
-          display: block;
-          width: 2rem;
-        }
       }
-      &__check {
-        background-color: $tertiaire;
-        border-radius: 0 20px 20px 0;
-        display: none;
-        height: 100%;
-        padding: 1.55rem 1rem;
-        & .fa-check-circle {
-          color: #fff;
-          font-size: 1.5em;
-          background: $tertiaire;
-        }
+      &--detail {
+        display: flex;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        width: 245px;
       }
-
-      &:hover &__desc--detail {
-        width: 200px;
-      }
-      &:hover &__check {
-        animation: slidein 0.5s;
+      & span {
+        font-weight: bolder;
         display: block;
-        & .fa-check-circle {
-          animation: rotation 0.5s;
-        }
+        width: 2rem;
+      }
+    }
+    &__check {
+      background-color: $tertiaire;
+      border-radius: 0 20px 20px 0;
+      display: none;
+      height: 100%;
+      padding: 1.55rem 1rem;
+      & .fa-check-circle {
+        color: #fff;
+        font-size: 1.5em;
+        background: $tertiaire;
+      }
+    }
+
+    &:hover &__desc--detail {
+      width: 200px;
+    }
+    &:hover &__check {
+      animation: slidein 0.5s;
+      display: block;
+      & .fa-check-circle {
+        animation: rotation 0.5s;
       }
     }
   }
@@ -130,7 +133,6 @@
     }
   }
   &__dessert {
-    margin-bottom: 2rem;
     &__title {
       position: relative;
       & h4 {
@@ -143,18 +145,24 @@
   }
   &__btn {
     width: 150px;
-    margin: 0 auto;
+    margin: 2rem auto;
+    display: block;
   }
 }
 
 @media screen and(min-width:768px) {
   .entete {
     width: 90%;
-    margin: 1.5rem auto;
+    margin: 0 auto 1.5rem auto;
     &__logo {
       margin: 0 8%;
       display: flex;
       justify-content: center;
+
+      &__img {
+        border-radius: 20px 20px 0 0;
+        overflow: hidden;
+      }
     }
   }
   .menu {
@@ -174,24 +182,60 @@
   }
 }
 @media screen and(min-width:992px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .header__title--menu {
+    width: 30%;
+  }
+  .entete {
+    width: 100%;
+    margin: 0 auto 2rem auto;
+  }
   .menu {
+    width: 35%;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     gap: 1rem;
     margin: 0 2rem;
-
     &__entree {
       width: 100%;
-      &__card-bloc {
-        border-radius: 20px 20px 20px 20px;
-        & h4 {
-          white-space: nowrap;
-        }
-        &__desc--detail {
-          max-width: 150px;
-          overflow: hidden;
-        }
+    }
+    &__plat {
+      width: 100%;
+    }
+    &__dessert {
+      width: 100%;
+    }
+    &__box {
+      max-width: 100%;
+    }
+    &__card-bloc {
+      border-radius: 20px 20px 20px 20px;
+
+      & h4 {
+        width: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      &__desc {
+        margin-left: 0;
+      }
+      &:hover &__desc--detail {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+      &__desc-bloc {
+        flex-direction: row;
+      }
+      &__desc--detail {
+        width: 100%;
       }
     }
   }
