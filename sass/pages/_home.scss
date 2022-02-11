@@ -1,14 +1,13 @@
 /* Version mobile */
-/* localité */
+/* le loader */
 .loading {
   animation: chargement 5s linear;
-
   animation-fill-mode: forwards;
   justify-content: center;
   align-items: center;
   display: flex;
   &-lettre {
-    font-size: 80px;
+    font-size: 45px;
     letter-spacing: 10px;
     animation: loading 1.2s linear infinite;
     &:nth-child(1) {
@@ -37,6 +36,7 @@
     }
   }
 }
+/* localité */
 .local {
   background: $bgcolorG;
   padding: 1rem;
@@ -55,7 +55,7 @@
     flex-direction: column;
     flex-wrap: wrap;
     margin: 0 auto;
-    padding: 1em 5% 3em;
+    padding: 1rem 5% 3rem;
     text-align: center;
     width: 100%;
     &__title {
@@ -199,11 +199,14 @@
 }
 
 @media screen and (min-width: 768px) {
+  .loading__lettre {
+    font-size: 80px;
+  }
   .local {
     border-radius: 0 0 25px 25px;
     padding: 2rem;
     &__city {
-      font-size: 1.2em;
+      font-size: 1.2rem;
     }
   }
   .home {
@@ -216,7 +219,7 @@
       justify-content: space-around;
       &__text {
         margin-bottom: 1rem;
-        font-size: 1.2em;
+        font-size: 1.2rem;
       }
     }
     &__working {
@@ -241,7 +244,7 @@
           font-size: 1.2em;
         }
         &__number span {
-          font-size: 1em;
+          font-size: 1rem;
         }
       }
     }

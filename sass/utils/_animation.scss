@@ -18,6 +18,7 @@
     transform: rotate(360deg);
   }
 }
+
 /* appartition des menus */
 @keyframes menu {
   0% {
@@ -30,10 +31,10 @@
     transform: translateY(0px);
   }
 }
+/* le loader */
 @keyframes loading {
   0% {
     color: $primaire;
-    opacity: 1;
     text-shadow: 0 6px 8px darkgrey;
   }
   90% {
@@ -43,9 +44,9 @@
     color: $primaire;
   }
 }
+/* diparition du loader */
 @keyframes chargement {
   from {
-    display: block;
     position: absolute;
     z-index: 10;
     height: 100%;
@@ -53,7 +54,6 @@
     background: rgba(204, 200, 200, 0.671);
   }
   99% {
-    display: none;
     height: 100%;
     width: 100%;
   }

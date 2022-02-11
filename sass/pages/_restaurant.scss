@@ -75,6 +75,9 @@
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
       padding: 1rem;
       & h4 {
         padding-bottom: 0.3rem;
@@ -82,9 +85,10 @@
       &-bloc {
         display: flex;
         justify-content: space-between;
+        position: relative;
       }
       &--detail {
-        display: flex;
+        font-size: 0.9rem;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
@@ -92,14 +96,13 @@
       }
       & span {
         font-weight: bolder;
-        display: block;
-        width: 2rem;
       }
     }
     &__check {
       background-color: $tertiaire;
       border-radius: 0 20px 20px 0;
-      display: none;
+      position: absolute;
+      right: -57px;
       height: 100%;
       padding: 1.55rem 1rem;
       & .fa-check-circle {
@@ -114,7 +117,9 @@
     }
     &:hover &__check {
       animation: slidein 0.5s;
-      display: block;
+      // display: inline-block;
+      position: relative;
+      right: 0;
       & .fa-check-circle {
         animation: rotation 0.5s;
       }
@@ -169,7 +174,7 @@
   .menu {
     width: 80%;
     margin: 0 auto;
-    &__entree__card-bloc {
+    &__card-bloc {
       &__desc--detail {
         overflow: visible;
         width: 100%;
@@ -237,5 +242,10 @@
         width: 100%;
       }
     }
+  }
+}
+@media screen and(min-width:1440px) {
+  .menu {
+    width: 80%;
   }
 }
