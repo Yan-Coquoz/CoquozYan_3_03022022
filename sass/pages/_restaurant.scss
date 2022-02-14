@@ -50,7 +50,7 @@
   }
   &__card-bloc {
     border-radius: 20px;
-    box-shadow: 0px 6px 9px 0px rgba(0, 0, 0, 0.4);
+    box-shadow: $shadow;
     display: flex;
     justify-content: space-between;
     position: relative;
@@ -89,9 +89,7 @@
       }
       &--detail {
         font-size: 0.9rem;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
+        @include suspension;
         width: 245px;
       }
       & span {
@@ -117,7 +115,6 @@
     }
     &:hover &__check {
       animation: slidein 0.5s;
-      // display: inline-block;
       position: relative;
       right: 0;
       & .fa-check-circle {
@@ -224,17 +221,13 @@
 
       & h4 {
         width: 100%;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
+        @include suspension;
       }
       &__desc {
         margin-left: 0;
       }
       &:hover &__desc--detail {
-        overflow: hidden;
-        white-space: nowrap;
-        text-overflow: ellipsis;
+        @include suspension;
       }
       &__desc-bloc {
         flex-direction: row;
