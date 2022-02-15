@@ -23,6 +23,7 @@
         }
         &:hover .fas.fa-heart {
           display: block;
+          animation: heart 0.4s;
           color: $primaire;
         }
       }

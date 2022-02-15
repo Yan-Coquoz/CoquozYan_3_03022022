@@ -40,7 +40,7 @@ Puis le dans le package.json.
 ````json
 {
   "scripts": {
-    "sass": "sass --watch ./sass/main.scss:./public/style.css"
+    "sass": "sass --watch ./sass/main.scss:./public/style.css --style compressed"
   }
 }
 
@@ -48,6 +48,12 @@ Puis le dans le package.json.
 
 - `sass` : ce que l'on va utiliser.
 - `--watch` : permet de relancé le serveur, de rafraichir la page en direct. peut être remplacé par `-w`.
+- `--style compressed` La façon dont le fichier css sera rendu grâce au flag `--style`. 
+  *Les options possibles :*
+  1) `Nested` : imite le nesting SASS tout en maintenant une syntaxe CSS correcte.
+  2) `Expended` : Le plus proche de la façon dont on écris le CSS. (facile à lire).
+  3) `Compact` : met le selecteur et son ensemble sur une seule ligne.
+  4) `Compressed` : minifie le code, supprime tout les espaces.
 
 Lancement de SASS dans le terminal :
 

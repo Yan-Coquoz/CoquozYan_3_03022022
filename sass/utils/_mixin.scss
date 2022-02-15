@@ -1,3 +1,4 @@
+/* Souligne les titres dans la partie restaurant */
 @mixin souligner {
   position: absolute;
   bottom: -7px;
@@ -7,6 +8,7 @@
   height: 3px;
   display: inline;
 }
+/* place des points de suspension sur un texte*/
 @mixin suspension {
   overflow: hidden;
   white-space: nowrap;
