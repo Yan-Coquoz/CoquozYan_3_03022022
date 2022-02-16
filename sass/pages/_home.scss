@@ -187,7 +187,6 @@
         }
         &:hover .fas.fa-heart {
           display: inline;
-          animation: heart 0.4s;
           color: $primaire;
         }
       }
@@ -246,6 +245,7 @@
         }
         &__number span {
           font-size: 1rem;
+          top: 1px;
         }
       }
     }

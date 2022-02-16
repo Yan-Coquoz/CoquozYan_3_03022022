@@ -23,7 +23,7 @@
         }
         &:hover .fas.fa-heart {
           display: block;
-          animation: heart 0.4s;
+
           color: $primaire;
         }
       }
@@ -91,10 +91,10 @@
       &--detail {
         font-size: 0.9rem;
         @include suspension;
-        width: 245px;
       }
       & span {
         font-weight: bolder;
+        margin-left: 0.2rem;
       }
     }
     &__check {
@@ -233,14 +233,14 @@
       &__desc-bloc {
         flex-direction: row;
       }
-      &__desc--detail {
-        width: 100%;
-      }
     }
   }
 }
 @media screen and(min-width:1440px) {
   .menu {
     width: 80%;
+    &__card-bloc__desc--detail {
+      font-size: 15px;
+    }
   }
 }

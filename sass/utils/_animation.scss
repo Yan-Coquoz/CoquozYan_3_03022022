@@ -63,17 +63,3 @@
     position: absolute;
   }
 }
-/* Le coeur */
-@keyframes heart {
-  0% {
-    opacity: 0;
-    color: $primaire;
-  }
-  50% {
-    color: lighten($primaire, 10);
-  }
-  100% {
-    color: $secondaire;
-    opacity: 1;
-  }
-}
