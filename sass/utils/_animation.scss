@@ -1,3 +1,16 @@
+/* appartition des menus */
+@keyframes menu {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
 /* apparition du check des menus*/
 @keyframes slidein {
   from {
@@ -19,23 +32,11 @@
   }
 }
 
-/* appartition des menus */
-@keyframes menu {
-  0% {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translateY(0px);
-  }
-}
 /* le loader */
 @keyframes loading {
   0% {
     color: $primaire;
-    text-shadow: 0 6px 8px darkgrey;
+    text-shadow: 0 6px 8px black;
   }
   90% {
     color: $secondaire;

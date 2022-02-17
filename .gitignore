@@ -1,1 +1,4 @@
+# Pour la config du liveServer
 .vscode
+# Sass
+*.css.map
