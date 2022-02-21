@@ -12,7 +12,7 @@ button {
       lighten($primaire, 5%) 0%,
       lighten($secondaire, 5%) 100%
     );
-    box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.66);
+    box-shadow: 0px 6px 9px 0px rgba(0, 0, 0, 0.8);
   }
   &:active {
     position: relative;
