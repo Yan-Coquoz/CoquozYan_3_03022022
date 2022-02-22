@@ -1,6 +1,7 @@
+/* Placer l'import de normalize en haut ! spécificité */
+@import "./vendors/normalize";
 @import "./utils/variable", "./utils/mixin", "./utils/animation";
 @import "./base/base";
 @import "./layouts/header", "./layouts/footer";
 @import "./components/icons", "./components/button";
 @import "./pages/home", "./pages/restaurant";
-@import "./vendors/normalize";
