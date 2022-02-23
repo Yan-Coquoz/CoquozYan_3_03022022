@@ -49,6 +49,7 @@
       }
     }
   }
+
   &__card-bloc {
     border-radius: 20px;
     box-shadow: $shadow;
@@ -59,7 +60,7 @@
     overflow: hidden;
 
     &:nth-child(1) {
-      animation: menu 0.8s ease-in 0.1s;
+      animation: menu 0.8s ease-in 0.1s; /* arrivée des menus */
     }
     &:nth-child(2) {
       animation: menu 0.8s ease-in 0.12s;

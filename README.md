@@ -48,7 +48,7 @@ Puis le dans le package.json.
 
 - `sass` : ce que l'on va utiliser.
 - `--watch` : permet de relancé le serveur, de rafraichir la page en direct. peut être remplacé par `-w`.
-- `--style compressed` La façon dont le fichier css sera rendu grâce au flag `--style`. 
+- `--style compressed` La façon dont le fichier css sera rendu grâce au flag `--style`.
   *Les options possibles :*
   1) `Nested` : imite le nesting SASS tout en maintenant une syntaxe CSS correcte.
   2) `Expended` : Le plus proche de la façon dont on écris le CSS. (facile à lire).
@@ -71,7 +71,7 @@ Liste des dossiers utilisés :
 - components : Blocs BEM indépendant (bouton, icons...).
 - pages : Tout ce qui est spécifique à une page.
 - themes : tout ce qui touche à des themes spécifique (fête de noel, black friday...)
-- vendors : Tous ce qui est externe au site, (bootstrap, Jquery UI...).
+- vendors : Tous ce qui est externe au site, (bootstrap, Jquery UI, normalize...).
 
 </details>
 
@@ -99,8 +99,7 @@ Dans le package.json :
 
 explications :
 
-- On va utiliser la commande `npm run prefix`
-- Qui va utiliser `postcss` sur le fichier `style.css` et qu'il va utiliser `autoprefixer` en mode developpement, et mettra le fichier à utilisé dans le dossier `prefixed`.
+- Qui va utiliser `postcss` sur le fichier `./public/style.css` et qu'il va utiliser `autoprefixer` en mode developpement, et mettra le fichier à utilisé dans le dossier `./public/prefixed/style.css`.
 - La dernier ligne, est le rayon d'action d'autoprefixer, les 4 dernieres versions des navigateurs.
 
 </details>
