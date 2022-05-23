@@ -1,5 +1,5 @@
 # Oh my Food
-
+![GitHub repo size](<https://img.shields.io/github/repo-size/Yan-Coquoz/OhMyFood>) 
 Maquettage d'un site de commande de repas en ligne.
 <br>
 Le site est en mobile first.
