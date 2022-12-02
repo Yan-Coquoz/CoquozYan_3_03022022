@@ -15,7 +15,7 @@ couleur :
 
 - Primaire : #9356DC
 - Secondaire : #FF79DA
-- Tertaire : #99E2D0
+- Tertiaires : #99E2D0
 - Footer : #353535
 
 ### Validation du code
@@ -27,7 +27,7 @@ couleur :
 
 <details>
 <summary>Config SASS</summary>
-mettre SASS en global si ce n'est déja fait.
+mettre SASS en global si ce n'est déjà fait.
 `-g` : installe le package en global, sur la machine.
 ````bash
   npm -g sass
@@ -47,15 +47,15 @@ Puis le dans le package.json.
 ````
 
 - `sass` : ce que l'on va utiliser.
-- `--watch` : permet de relancé le serveur, de rafraichir la page en direct. peut être remplacé par `-w`.
+- `--watch` : permet de relancé le serveur, de rafraîchir la page en direct. peut être remplacé par `-w`.
 - `--style compressed` La façon dont le fichier css sera rendu grâce au flag `--style`.
   *Les options possibles :*
   1) `Nested` : imite le nesting SASS tout en maintenant une syntaxe CSS correcte.
   2) `Expended` : Le plus proche de la façon dont on écris le CSS. (facile à lire).
-  3) `Compact` : met le selecteur et son ensemble sur une seule ligne.
+  3) `Compact` : met le sélecteur et son ensemble sur une seule ligne.
   4) `Compressed` : minifie le code, supprime tout les espaces.
 
-Lancement de SASS dans le terminal :
+- Lancement de SASS dans le terminal :
 
 ````bash
  npm run sass

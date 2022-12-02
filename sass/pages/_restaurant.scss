@@ -154,7 +154,7 @@
   }
 }
 
-@media screen and(min-width:768px) {
+@media screen and (min-width: 768px) {
   .entete {
     width: 90%;
     margin: 0 auto 1.5rem auto;
@@ -187,7 +187,7 @@
     }
   }
 }
-@media screen and(min-width:992px) {
+@media screen and (min-width: 992px) {
   main {
     display: flex;
     flex-direction: column;
@@ -237,7 +237,7 @@
     }
   }
 }
-@media screen and(min-width:1440px) {
+@media screen and (min-width: 1440px) {
   .menu {
     width: 80%;
     &__card-bloc__desc--detail {
